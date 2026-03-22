@@ -1,0 +1,228 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.5.2 Chrome/142.0.7444.265 Electron/39.6.1 Safari/537.36" version="29.5.2">
+  <diagram name="第 1 页" id="-gYgwLoRRLEGOgU_AoF6">
+    <mxGraphModel dx="1786" dy="1080" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="otb6PJPYaGt9PNmusXRp-36" edge="1" parent="1" source="otb6PJPYaGt9PNmusXRp-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="otb6PJPYaGt9PNmusXRp-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="713" y="890" />
+              <mxPoint x="593" y="890" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="otb6PJPYaGt9PNmusXRp-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;TYPE_VIRTIO_GPU_GL_PCI&lt;/span&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;virtio-gpu-pci-gl.c&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="206" x="610" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="otb6PJPYaGt9PNmusXRp-37" edge="1" parent="1" source="otb6PJPYaGt9PNmusXRp-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="otb6PJPYaGt9PNmusXRp-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="855" y="890" />
+              <mxPoint x="593" y="890" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="otb6PJPYaGt9PNmusXRp-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;TYPE_VIRTIO_GPU_RUTABAGA_PCI&lt;/span&gt;&lt;br style=&quot;text-wrap: nowrap;&quot;&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;virtio-gpu-pci-rutabaga.c&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="210" x="750" y="1070" as="geometry" />
+        </mxCell>
+        <mxCell id="otb6PJPYaGt9PNmusXRp-33" edge="1" parent="1" source="otb6PJPYaGt9PNmusXRp-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="otb6PJPYaGt9PNmusXRp-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="otb6PJPYaGt9PNmusXRp-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;TYPE_VIRTIO_GPU_PCI_BASE&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;virtio-gpu-pci.c&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="206" x="490" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="otb6PJPYaGt9PNmusXRp-34" edge="1" parent="1" source="otb6PJPYaGt9PNmusXRp-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="otb6PJPYaGt9PNmusXRp-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="otb6PJPYaGt9PNmusXRp-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;TYPE_VIRTIO_GPU_PCI&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;virtio-gpu-pci.c&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="206" x="490" y="910" as="geometry" />
+        </mxCell>
+        <mxCell id="otb6PJPYaGt9PNmusXRp-22" edge="1" parent="1" source="otb6PJPYaGt9PNmusXRp-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="otb6PJPYaGt9PNmusXRp-19">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="163" y="980" />
+              <mxPoint x="313" y="980" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="otb6PJPYaGt9PNmusXRp-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;TYPE_VIRTIO_GPU_RUTABAGA&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;virtio-gpu-rutabaga.c&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="206" x="60" y="1070" as="geometry" />
+        </mxCell>
+        <mxCell id="otb6PJPYaGt9PNmusXRp-21" edge="1" parent="1" source="otb6PJPYaGt9PNmusXRp-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="otb6PJPYaGt9PNmusXRp-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="otb6PJPYaGt9PNmusXRp-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;TYPE_VIRTIO_GPU_GL&lt;/span&gt;&lt;br style=&quot;text-wrap: nowrap;&quot;&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;virtio-gpu-gl.c&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="206" x="210" y="1010" as="geometry" />
+        </mxCell>
+        <mxCell id="otb6PJPYaGt9PNmusXRp-23" edge="1" parent="1" source="otb6PJPYaGt9PNmusXRp-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="otb6PJPYaGt9PNmusXRp-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="otb6PJPYaGt9PNmusXRp-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;TYPE_VIRTIO_GPU&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;virtio-gpu.c&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="206" x="210" y="910" as="geometry" />
+        </mxCell>
+        <mxCell id="otb6PJPYaGt9PNmusXRp-25" edge="1" parent="1" source="otb6PJPYaGt9PNmusXRp-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="otb6PJPYaGt9PNmusXRp-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="otb6PJPYaGt9PNmusXRp-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;TYPE_VIRTIO_GPU_BASE&lt;/span&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;virtio-gpu-base.c&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="206" x="210" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="otb6PJPYaGt9PNmusXRp-30" edge="1" parent="1" source="otb6PJPYaGt9PNmusXRp-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="otb6PJPYaGt9PNmusXRp-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="otb6PJPYaGt9PNmusXRp-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;TYPE_VIRTIO_DEVICE&lt;/span&gt;&lt;div style=&quot;text-wrap: nowrap;&quot;&gt;virtio.c&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="206" x="210" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="otb6PJPYaGt9PNmusXRp-32" edge="1" parent="1" source="otb6PJPYaGt9PNmusXRp-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="otb6PJPYaGt9PNmusXRp-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="otb6PJPYaGt9PNmusXRp-26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;TYPE_VIRTIO_PCI&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;virtio-pci.c&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="206" x="490" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="otb6PJPYaGt9PNmusXRp-31" edge="1" parent="1" source="otb6PJPYaGt9PNmusXRp-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="otb6PJPYaGt9PNmusXRp-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="otb6PJPYaGt9PNmusXRp-28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;TYPE_PCI_DEVICE&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;pci.c&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="206" x="490" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="otb6PJPYaGt9PNmusXRp-29" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;TYPE_DEVICE&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;qdev.c&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="206" x="210" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="otb6PJPYaGt9PNmusXRp-39" edge="1" parent="1" source="otb6PJPYaGt9PNmusXRp-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="otb6PJPYaGt9PNmusXRp-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="otb6PJPYaGt9PNmusXRp-38" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;TYPE_VIRTIO_VGA_BASE&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;virtio-vga.c&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="206" x="927" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="otb6PJPYaGt9PNmusXRp-41" edge="1" parent="1" source="otb6PJPYaGt9PNmusXRp-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="otb6PJPYaGt9PNmusXRp-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="otb6PJPYaGt9PNmusXRp-40" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;TYPE_VIRTIO_VGA&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;virtio-vga.c&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="206" x="927" y="910" as="geometry" />
+        </mxCell>
+        <mxCell id="otb6PJPYaGt9PNmusXRp-43" edge="1" parent="1" source="otb6PJPYaGt9PNmusXRp-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="otb6PJPYaGt9PNmusXRp-38">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1160" y="890" />
+              <mxPoint x="1030" y="890" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="otb6PJPYaGt9PNmusXRp-42" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;TYPE_VIRTIO_VGA_GL&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;virtio-vga-gl.c&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="206" x="1057" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="otb6PJPYaGt9PNmusXRp-45" edge="1" parent="1" source="otb6PJPYaGt9PNmusXRp-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="otb6PJPYaGt9PNmusXRp-38">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1300" y="890" />
+              <mxPoint x="1030" y="890" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="otb6PJPYaGt9PNmusXRp-44" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;TYPE_VIRTIO_VGA_RUTABAGA&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;virtio-vga-rutabaga.c&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="206" x="1197" y="1070" as="geometry" />
+        </mxCell>
+        <mxCell id="Eg1iWAeXhn-oQFmEewrj-2" edge="1" parent="1" source="Eg1iWAeXhn-oQFmEewrj-4" style="endArrow=none;html=1;rounded=0;exitX=0.379;exitY=-0.015;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="130" y="298" as="sourcePoint" />
+            <mxPoint x="620" y="298" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Eg1iWAeXhn-oQFmEewrj-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="sw" vertex="1">
+          <mxGeometry height="30" width="60" x="150" y="268" as="geometry" />
+        </mxCell>
+        <mxCell id="Eg1iWAeXhn-oQFmEewrj-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="hw" vertex="1">
+          <mxGeometry height="30" width="60" x="150" y="298" as="geometry" />
+        </mxCell>
+        <mxCell id="Eg1iWAeXhn-oQFmEewrj-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" value="qemu" vertex="1">
+          <mxGeometry height="130" width="440" x="180" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Eg1iWAeXhn-oQFmEewrj-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" value="windows" vertex="1">
+          <mxGeometry height="90" width="290" x="250" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Eg1iWAeXhn-oQFmEewrj-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="sw" vertex="1">
+          <mxGeometry height="30" width="60" x="170" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Eg1iWAeXhn-oQFmEewrj-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=middle;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" value="kmd / viogpu3d" vertex="1">
+          <mxGeometry height="20" width="150" x="380" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Eg1iWAeXhn-oQFmEewrj-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=middle;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" value="umd / mesa" vertex="1">
+          <mxGeometry height="20" width="150" x="380" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Eg1iWAeXhn-oQFmEewrj-17" edge="1" parent="1" source="Eg1iWAeXhn-oQFmEewrj-20" style="endArrow=none;dashed=1;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="Eg1iWAeXhn-oQFmEewrj-6" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="490" y="240" as="sourcePoint" />
+            <mxPoint x="540" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Eg1iWAeXhn-oQFmEewrj-19" edge="1" parent="1" source="Eg1iWAeXhn-oQFmEewrj-16" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="Eg1iWAeXhn-oQFmEewrj-20" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="460" y="220" as="sourcePoint" />
+            <mxPoint x="510" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Eg1iWAeXhn-oQFmEewrj-21" edge="1" parent="1" source="Eg1iWAeXhn-oQFmEewrj-6" style="endArrow=none;dashed=1;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="Eg1iWAeXhn-oQFmEewrj-20" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="250" y="105" as="sourcePoint" />
+            <mxPoint x="540" y="105" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Eg1iWAeXhn-oQFmEewrj-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=middle;align=center;fillColor=#d5e8d4;strokeColor=#82b366;" value="directx runtime" vertex="1">
+          <mxGeometry height="20" width="90" x="260" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="Eg1iWAeXhn-oQFmEewrj-22" edge="1" parent="1" source="Eg1iWAeXhn-oQFmEewrj-20" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Eg1iWAeXhn-oQFmEewrj-15" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="460" y="220" as="sourcePoint" />
+            <mxPoint x="510" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Eg1iWAeXhn-oQFmEewrj-23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="40" width="440" x="180" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Eg1iWAeXhn-oQFmEewrj-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="hw" vertex="1">
+          <mxGeometry height="30" width="60" x="170" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Eg1iWAeXhn-oQFmEewrj-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=middle;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" value="vio-gpu-pci-gl" vertex="1">
+          <mxGeometry height="20" width="150" x="320" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="Eg1iWAeXhn-oQFmEewrj-26" edge="1" parent="1" source="Eg1iWAeXhn-oQFmEewrj-20" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Eg1iWAeXhn-oQFmEewrj-24" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="305" y="160" />
+              <mxPoint x="395" y="160" />
+            </Array>
+            <mxPoint x="460" y="270" as="sourcePoint" />
+            <mxPoint x="510" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Eg1iWAeXhn-oQFmEewrj-27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="virglrenderer" vertex="1">
+          <mxGeometry height="20" width="150" x="320" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Eg1iWAeXhn-oQFmEewrj-28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="gpu vulkan driver" vertex="1">
+          <mxGeometry height="20" width="150" x="320" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="Eg1iWAeXhn-oQFmEewrj-30" edge="1" parent="1" source="Eg1iWAeXhn-oQFmEewrj-27" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="Eg1iWAeXhn-oQFmEewrj-24" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="460" y="220" as="sourcePoint" />
+            <mxPoint x="510" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Eg1iWAeXhn-oQFmEewrj-31" edge="1" parent="1" source="Eg1iWAeXhn-oQFmEewrj-28" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="Eg1iWAeXhn-oQFmEewrj-27" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="460" y="220" as="sourcePoint" />
+            <mxPoint x="510" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Eg1iWAeXhn-oQFmEewrj-32" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" value="gpu hardware" vertex="1">
+          <mxGeometry height="20" width="150" x="320" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="Eg1iWAeXhn-oQFmEewrj-34" edge="1" parent="1" source="Eg1iWAeXhn-oQFmEewrj-32" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="Eg1iWAeXhn-oQFmEewrj-28" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="460" y="270" as="sourcePoint" />
+            <mxPoint x="510" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
