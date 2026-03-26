@@ -71,9 +71,19 @@ z-1.dll
 - build and install virglrender lib with meson
 
 ## 4. debug drivers on qemu
+- download virtio win driver: `https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/`
 - install win on qemu virt machine
 ```cpp
 ./qemu-img create -f qcow2 /mnt/ssd/qemu-disk/win-arm64-disk.qcow2 80G
 
-./qemu-system-aarch64 -M virt,acpi=on,virtualization=true -cpu cortex-a76 -smp 8 -m 8G --accel tcg,thread=multi -bios /mnt/ssd/qemu-disk/QEMU_EFI.fd -device ramfb -device qemu-xhci -device usb-kbd -device usb-tablet -device virtio-scsi-device,id=scsi -device scsi-cd,drive=cdrom -drive if=none,id=cdrom,media=cdrom,file="/mnt/ssd/iso/22621.5771.250817-1015.NI_RELEASE_SVC_IM_CLIENTPRO_OEMRET_A64FRE_EN-US.ISO" -device virtio-blk-device,drive=system -drive if=none,id=system,file=/mnt/ssd/qemu-disk/win-arm64-disk.qcow2 -netdev user,id=net1 -device virtio-net-device,netdev=net1 -rtc base=localtime -device virtio-gpu-pci -display gtk,gl=on
+./qemu-system-aarch64 -M virt,acpi=on,virtualization=true -cpu cortex-a76 -smp 8 -m 8G --accel tcg,thread=multi -bios /mnt/ssd/qemu-disk/QEMU_EFI.fd -device ramfb -device qemu-xhci -device usb-kbd -device usb-tablet -device usb-storage,drive=install -drive if=none,id=install,format=raw,media=cdrom,file="/mnt/ssd/iso/22621.5771.250817-1015.NI_RELEASE_SVC_IM_CLIENTPRO_OEMRET_A64FRE_EN-US.ISO" -device usb-storage,drive=virtio-drivers -drive if=none,id=virtio-drivers,format=raw,media=cdrom,file="/mnt/ssd/iso/virtio-win-0.1.285.iso" -device virtio-blk-pci,drive=system -drive if=none,id=system,file=/mnt/ssd/qemu-disk/win-arm64-disk.qcow2,format=qcow2 -netdev user,id=net1 -device virtio-net-device,netdev=net1 -rtc base=localtime -device virtio-gpu-pci -vnc :0 -monitor stdio
 ```
+- ignore the tpm & secure check by add the following DWORD32 key-value in regedit path: `HKEY_LOCAL_MACHINE\SYSTEM\Setup\LabConfig`
+```cpp
+BypassTPMCheck - 1
+BypassSecureBootCheck - 1
+BypassRAMCheck - 1
+BypassStorageCheck - 1
+BypassCPUCheck - 1
+```
+- install the `viostor.inf` driver in `virtio-win-0.1.285.iso` when the system cannot recognize system disk
