@@ -109,3 +109,12 @@ export DISPLAY=:0
 
 ./qemu-system-x86_64 -M q35 -cpu host -smp 8 -m 8G --accel kvm -drive if=pflash,format=raw,file=/usr/share/OVMF/OVMF_CODE_4M.secboot.fd,readonly=on -drive if=pflash,format=raw,file=/mnt/ssd/qemu-disk/OVMF_VARS_4M.fd -device qemu-xhci -device usb-kbd -device usb-tablet -device usb-storage,drive=virtio-drivers -drive if=none,id=virtio-drivers,format=raw,media=cdrom,file="/mnt/ssd/iso/virtio-win-0.1.285.iso" -device virtio-blk-pci,drive=system -drive if=none,id=system,file=/mnt/ssd/qemu-disk/win-x64-disk.qcow2,format=qcow2 -netdev user,id=net1 -device virtio-net-pci,netdev=net1 -rtc base=localtime -device virtio-gpu-gl-pci -display gtk,gl=on -monitor stdio
 ```
+- for debug driver in win system by windbg, we need two win system, one called `target` which install the driver, one called `host` which run windbg and monitor `target`
+- so we run one win system by VMware, cause its official drivers is stable, and another one by qemu, we will install our built driver in it
+- firstly we create a bridge net and a tap named `tap-qemu`, and boot qemu with this ned device:
+```cpp
+sudo ... -net nic,model=e1000,macaddr=52:54:00:12:34:56 -net tap,ifname=tap-qemu,script=no,downscript=no ...
+```
+- then set VMware net as bridge net, now we could ping the two win system with each other:
+
+<img src="./pic/vmware-qemu-bridge-net.png" width="1000" alt="win viogpu dod">
