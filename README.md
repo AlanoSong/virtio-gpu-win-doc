@@ -115,6 +115,7 @@ export DISPLAY=:0
 ```cpp
 sudo ... -net nic,model=e1000,macaddr=52:54:00:12:34:56 -net tap,ifname=tap-qemu,script=no,downscript=no ...
 ```
-- then set VMware net as bridge net, now we could ping the two win system with each other:
+- then set VMware net as bridge net, and create bridge net on local pc for qemu, we can use the scripts under `doc` folder
+- now we could ping the two win system with each other:
 
 <img src="./pic/vmware-qemu-bridge-net.png" width="1000" alt="win viogpu dod">
