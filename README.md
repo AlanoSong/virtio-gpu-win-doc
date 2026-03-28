@@ -2,7 +2,7 @@
 
 ## 1. architecture
 
-![](./pic/virtio-gpu-win-arch.png)
+<img src="./pic/virtio-gpu-win-arch.png" width="800" alt="win viogpu dod">
 
 ## 2. projects related
 
@@ -70,13 +70,15 @@ z-1.dll
 - or just the latest virglrenderer
 - build and install virglrender lib with meson
 
-## 4. debug drivers on qemu
+## 4. install win system
 - download virtio win driver: `https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/archive-virtio/`
 - install win on qemu virt machine
 ```cpp
-./qemu-img create -f qcow2 /mnt/ssd/qemu-disk/win-arm64-disk.qcow2 80G
+./qemu-img create -f qcow2 /mnt/ssd/qemu-disk/win-x64-disk.qcow2 80G
 
-./qemu-system-aarch64 -M virt,acpi=on,virtualization=true -cpu cortex-a76 -smp 8 -m 8G --accel tcg,thread=multi -bios /mnt/ssd/qemu-disk/QEMU_EFI.fd -device ramfb -device qemu-xhci -device usb-kbd -device usb-tablet -device usb-storage,drive=install -drive if=none,id=install,format=raw,media=cdrom,file="/mnt/ssd/iso/22621.5771.250817-1015.NI_RELEASE_SVC_IM_CLIENTPRO_OEMRET_A64FRE_EN-US.ISO" -device usb-storage,drive=virtio-drivers -drive if=none,id=virtio-drivers,format=raw,media=cdrom,file="/mnt/ssd/iso/virtio-win-0.1.285.iso" -device virtio-blk-pci,drive=system -drive if=none,id=system,file=/mnt/ssd/qemu-disk/win-arm64-disk.qcow2,format=qcow2 -netdev user,id=net1 -device virtio-net-device,netdev=net1 -rtc base=localtime -device virtio-gpu-pci -vnc :0 -monitor stdio
+../configure --target-list=x86_64-softmmu --disable-docs --disable-werror --enable-sdl --enable-slirp --enable-virglrenderer --enable-gtk --enable-debug
+
+./qemu-system-x86_64 -M q35 -cpu host -smp 8 -m 8G --accel kvm -drive if=pflash,format=raw,file=/usr/share/OVMF/OVMF_CODE_4M.secboot.fd,readonly=on -drive if=pflash,format=raw,file=/mnt/ssd/qemu-disk/OVMF_VARS_4M.fd -device qemu-xhci -device usb-kbd -device usb-tablet -device usb-storage,drive=install -drive if=none,id=install,format=raw,media=cdrom,file="/mnt/ssd/iso/19041.1_PROFESSIONAL_X64_EN-US.ISO" -device usb-storage,drive=virtio-drivers -drive if=none,id=virtio-drivers,format=raw,media=cdrom,file="/mnt/ssd/iso/virtio-win-0.1.285.iso" -device virtio-blk-pci,drive=system -drive if=none,id=system,file=/mnt/ssd/qemu-disk/win-x64-disk.qcow2,format=qcow2 -netdev user,id=net1 -device virtio-net-pci,netdev=net1 -rtc base=localtime -device qxl-vga -display gtk -monitor stdio
 ```
 - ignore the tpm & secure check by add the following DWORD32 key-value in regedit path: `HKEY_LOCAL_MACHINE\SYSTEM\Setup\LabConfig`
 ```cpp
@@ -87,3 +89,23 @@ BypassStorageCheck - 1
 BypassCPUCheck - 1
 ```
 - install the `viostor.inf` driver in `virtio-win-0.1.285.iso` when the system cannot recognize system disk
+- cause there is only `viogpudo` (display only) in offical `virtio-win-0.1.285.iso` package, so we install this driver firstly
+- currently, the win desktop will like this:
+
+<img src="./pic/win-viogpu-dod.png" width="800" alt="win viogpu dod">
+
+## 5. debug driver on qemu
+- build qemu with `--enable-debug`, `--enable-virglrenderer`, `--enable-gtk` flag
+- remember to set the following env before start qemu
+```cpp
+// without the following evn
+// the host gdk will report this: (qemu:70879): Gdk-WARNING **: 14:38:05.466: eglMakeCurrent failed
+// and qemu window will black screen when switch from `VGA`(default) to `virtio-gpu-gl-pci`
+// I don't know why
+export SDL_VIDEODRIVER=x11
+export GDK_BACKEND=x11
+unset WAYLAND_DISPLAY
+export DISPLAY=:0
+
+./qemu-system-x86_64 -M q35 -cpu host -smp 8 -m 8G --accel kvm -drive if=pflash,format=raw,file=/usr/share/OVMF/OVMF_CODE_4M.secboot.fd,readonly=on -drive if=pflash,format=raw,file=/mnt/ssd/qemu-disk/OVMF_VARS_4M.fd -device qemu-xhci -device usb-kbd -device usb-tablet -device usb-storage,drive=virtio-drivers -drive if=none,id=virtio-drivers,format=raw,media=cdrom,file="/mnt/ssd/iso/virtio-win-0.1.285.iso" -device virtio-blk-pci,drive=system -drive if=none,id=system,file=/mnt/ssd/qemu-disk/win-x64-disk.qcow2,format=qcow2 -netdev user,id=net1 -device virtio-net-pci,netdev=net1 -rtc base=localtime -device virtio-gpu-gl-pci -display gtk,gl=on -monitor stdio
+```
