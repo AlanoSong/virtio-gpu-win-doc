@@ -90,6 +90,7 @@ BypassCPUCheck - 1
 ```
 - install the `viostor.inf` driver in `virtio-win-0.1.285.iso` when the system cannot recognize system disk
 - cause there is only `viogpudo` (display only) in offical `virtio-win-0.1.285.iso` package, so we install this driver firstly
+- to reduce the system load, disable all unnecessary soft in the win system, such as the firewall and windows defender
 - currently, the win desktop will like this:
 
 <img src="./pic/win-viogpu-dod.png" width="800" alt="win viogpu dod">
@@ -119,3 +120,16 @@ sudo ... -net nic,model=e1000,macaddr=52:54:00:12:34:56 -net tap,ifname=tap-qemu
 - now we could ping the two win system with each other:
 
 <img src="./pic/vmware-qemu-bridge-net.png" width="1000" alt="win viogpu dod">
+
+- on the `target` win system, enable windbg connect in admin by net like the following:
+```cpp
+bcdedit /debug on
+bcdedit /dbgsettings net hostip:192.168.1.4 port:55555 key:1.2.3.4
+bcdedit /set "{dbgsettings}" busparams 0.2.0 # targe net card pci id in device manager
+```
+- on the `host` win system, open windbg kernel debug mode, and then reboot `target` win system
+- after windbg connect successfully, the `target` win system will enter test mode, and we can install any driver without signature on it, and debug the driver:
+
+<img src="./pic/windbg-setup.png" width="800" alt="win viogpu dod">
+
+<img src="./pic/windbg-viogpudo-driver.png" width="800" alt="win viogpu dod">
